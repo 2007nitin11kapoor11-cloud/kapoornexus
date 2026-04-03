@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapoornexus | Premium Property Deals</title>
+    <style>
+        /* CSS Reset & Variables */
+        :root {
+            --primary-color: #0f172a;
+            --secondary-color: #ca8a04;
+            --text-light: #f8fafc;
+            --text-dark: #334155;
+            --bg-light: #f1f5f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        /* Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--text-light);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--text-light);
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #a16207;
+        }
+
+        /* About Section */
+        .about {
+            padding: 5rem 5%;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+            gap: 20px;
+        }
+
+        .feature-box {
+            flex: 1;
+            min-width: 250px;
+            padding: 2rem;
+            background: var(--bg-light);
+            border-radius: 8px;
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        .feature-box h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 5rem 5%;
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .contact-info span {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #020617;
+            color: #94a3b8;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Admin Notice */
+        .admin-login-btn {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #64748b;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none; /* In a full build, this would be a hamburger menu */
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .features {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Kapoor<span>nexus</span></a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Find Your Perfect Property</h1>
+        <p>Premium real estate solutions in Patiala. We bring you the best deals with trust, transparency, and unmatched expertise.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Why Choose Kapoornexus?</h2>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem;">Finding the right property requires the right partner. At Kapoornexus, we dedicate quality time to understanding your exact needs, ensuring you get the best service possible.</p>
+        
+        <div class="features">
+            <div class="feature-box">
+                <h3>15+ Years Experience</h3>
+                <p>Every member of our team brings over 15 years of deep industry expertise to the table. We know the market inside and out.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Quality Time & Focus</h3>
+                <p>We don't rush. We spend quality time with every client to ensure your investments are sound and your dreams are realized.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Unmatched Service</h3>
+                <p>From negotiation to paperwork, we handle the heavy lifting. You get a seamless, stress-free property buying or selling experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><span>Location:</span> Patiala Sirhind Road, Punjab</p>
+            <p><span>Phone:</span> +91 999999999</p>
+            <p><span>Business Hours:</span> Monday - Saturday, 9:00 AM - 7:00 PM</p>
+        </div>
+        
+        <a href="#" class="admin-login-btn" onclick="alert('Admin Portal requires backend CMS integration (e.g., WordPress or custom Node.js/PHP server) to securely process logins and save website edits.')">Owner Login Portal</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Kapoornexus. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
